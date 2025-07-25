@@ -319,7 +319,9 @@ a:active {
   justify-content: center;
   align-items: center;
   background-image: url("../assets/news-letter-bg.png");
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   margin-top: 120px;
 }
 
@@ -352,6 +354,44 @@ a:active {
   background-color: #e95a08;
   padding: 20px 55px;
   border: none;
+}
+
+/* footer styles */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 50px auto;
+}
+
+.footer-logo {
+  max-width: 135px;
+  height: auto;
+}
+
+.footer-message {
+  width: 350px;
+  font-size: 1.375rem;
+  margin-top: 15px;
+}
+
+.footer-nav-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-nav-col div {
+  margin-top: 30px;
+}
+
+.footer-nav-col div a {
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+.footer-icons img {
+  margin-right: 24px;
 }
 
 /* Media query for small screen  */
@@ -516,5 +556,18 @@ a:active {
 
   .btn-newsletter {
     padding: 20px 10px;
+  }
+
+  .footer {
+    width: 90vw;
+    flex-direction: column;
+  }
+
+  .footer-message {
+    font-size: 1rem;
+  }
+
+  .footer-icons {
+    margin-top: 20px;
   }
 }
