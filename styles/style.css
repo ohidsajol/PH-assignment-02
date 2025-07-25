@@ -198,6 +198,16 @@ a:active {
   position: absolute;
   left: 32%;
   top: -120px;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .badge-section {
