@@ -187,6 +187,51 @@ a:active {
   font-weight: 700;
 }
 
+/* badge section  */
+.badge-section-container {
+  position: relative;
+}
+
+.trusted-badge {
+  max-width: 290px;
+  max-height: 290px;
+  position: absolute;
+  left: 32%;
+  top: -150px;
+}
+
+.badge-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 200px;
+}
+
+.badge-section-image img {
+  max-width: 540px;
+  max-height: 600px;
+  height: auto;
+}
+
+.badge-section-title {
+  font-size: 3.1rem;
+  font-weight: 700;
+}
+
+.badge-section-text {
+  text-align: left;
+}
+
+.badge-section-description {
+  font-size: 1.375rem;
+}
+
+.badge-section-description li {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
 /* Media query for small screen  */
 @media screen and (max-width: 576px) {
   .nav {
@@ -239,6 +284,7 @@ a:active {
 
   .plants-section-title {
     font-size: 1.5rem;
+    margin-top: 60px;
   }
 
   .plants-section-description {
@@ -267,5 +313,30 @@ a:active {
 
   .plant-price {
     font-size: 1rem;
+  }
+
+  /* badge section  */
+  .badge-section-container {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .trusted-badge {
+    display: none;
+  }
+
+  .badge-section {
+    flex-direction: column;
+  }
+
+  .badge-section-image img {
+    width: 100%;
+  }
+
+  .badge-section-title {
+    font-size: 1.5rem;
+  }
+
+  .badge-section-description {
+    font-size: 0.875rem;
   }
 }
