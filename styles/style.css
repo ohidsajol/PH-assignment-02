@@ -193,18 +193,18 @@ a:active {
 }
 
 .trusted-badge {
-  max-width: 290px;
-  max-height: 290px;
+  max-width: 280px;
+  max-height: 280px;
   position: absolute;
   left: 32%;
-  top: -150px;
+  top: -120px;
 }
 
 .badge-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 70px;
   margin-top: 200px;
 }
 
@@ -229,7 +229,86 @@ a:active {
 
 .badge-section-description li {
   margin-top: 20px;
-  margin-left: 40px;
+  margin-left: 30px;
+}
+
+/* deals section  */
+.deals-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 130px;
+}
+.deals-section-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.deals-section-description {
+  font-size: 1.375rem;
+  max-width: 888px;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 120px;
+}
+
+.deals-section-offers {
+  display: grid;
+  grid-template-areas:
+    "offer-1 offer-3 offer-3"
+    "offer-2 offer-3 offer-3";
+  gap: 25px;
+
+  width: 100%;
+  height: calc(420px - 25px / 2);
+}
+
+.deals-section-offer {
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+}
+
+.offer-description {
+  color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.deals-section-offer a {
+  color: white;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.offer-3 p {
+  font-size: 2.5rem;
+}
+
+.offer-3 a {
+  font-size: 1.75rem;
+}
+
+.offer-1 {
+  grid-area: offer-1;
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.6), hsla(0, 0%, 0%, 0.6)),
+    url("../assets/deal-bloom.png");
+}
+
+.offer-2 {
+  grid-area: offer-2;
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.6), hsla(0, 0%, 0%, 0.6)),
+    url("../assets/deal-ana.png");
+}
+
+.offer-3 {
+  grid-area: offer-3;
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.6), hsla(0, 0%, 0%, 0.6)),
+    url("../assets/deal-zabo.png");
 }
 
 /* Media query for small screen  */
@@ -338,5 +417,36 @@ a:active {
 
   .badge-section-description {
     font-size: 0.875rem;
+  }
+
+  .deals-section {
+    width: 90vw;
+  }
+
+  .deals-section-title {
+    font-size: 1.5rem;
+  }
+
+  .deals-section-description {
+    font-size: 0.875rem;
+    margin-bottom: 50px;
+    width: 330px;
+  }
+
+  .deals-section-offers {
+    grid-template-areas: "offer-1" "offer-2" "offer-3";
+    gap: 20px;
+  }
+
+  .deals-section-offer {
+    height: 190px;
+  }
+
+  .offer-3 p {
+    font-size: 1.25rem;
+  }
+
+  .offer-3 a {
+    font-size: 1rem;
   }
 }
