@@ -249,7 +249,7 @@ a:active {
   max-width: 888px;
   text-align: center;
   margin-top: 16px;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
 }
 
 .deals-section-offers {
@@ -260,7 +260,7 @@ a:active {
   gap: 25px;
 
   width: 100%;
-  height: calc(420px - 25px / 2);
+  height: 420px;
 }
 
 .deals-section-offer {
@@ -309,6 +309,49 @@ a:active {
   grid-area: offer-3;
   background-image: linear-gradient(hsla(0, 0%, 0%, 0.6), hsla(0, 0%, 0%, 0.6)),
     url("../assets/deal-zabo.png");
+}
+
+/* Newsletter Section  */
+.newsletter-section {
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/news-letter-bg.png");
+  background-size: cover;
+  margin-top: 120px;
+}
+
+.newsletter-heading {
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.newsletter-email-field {
+  width: 830px;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  margin-top: 25px;
+}
+
+.newsletter-email-field input[type="email"] {
+  font-size: 1rem;
+  padding: 16px 20px;
+  border: none;
+}
+
+.newsletter-email-field input[type="email"] {
+  outline: none;
+}
+
+.btn-newsletter {
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #e95a08;
+  padding: 20px 55px;
+  border: none;
 }
 
 /* Media query for small screen  */
@@ -436,6 +479,7 @@ a:active {
   .deals-section-offers {
     grid-template-areas: "offer-1" "offer-2" "offer-3";
     gap: 20px;
+    height: calc(3 * 190px + 2 * 20px);
   }
 
   .deals-section-offer {
@@ -448,5 +492,29 @@ a:active {
 
   .offer-3 a {
     font-size: 1rem;
+  }
+
+  .newsletter-section {
+    margin-top: 40px;
+    height: 275px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .newsletter-heading {
+    font-size: 1.25rem;
+  }
+  .newsletter-email-field {
+    width: 320px;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .newsletter-email-field input[type="email"] {
+    width: 100%;
+  }
+
+  .btn-newsletter {
+    padding: 20px 10px;
   }
 }
